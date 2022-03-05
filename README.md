@@ -4,6 +4,7 @@
 
 - [Video](#video)
   - [Convert Video](#convert-video)
+  - [Extract Streams From a Video File](#extract-streams-from-a-video-file)
 - [Audio](#audio)
   - [Convert Audio](#convert-audio)
 
@@ -22,7 +23,7 @@
 ```
 _`-c:a` and `-b:a` for audio parameters_
 
-### Extract streams
+### Extract Streams From a Video File
 
 #### Extract video stream
 ```bash
