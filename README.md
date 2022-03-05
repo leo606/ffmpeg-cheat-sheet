@@ -1,6 +1,6 @@
 # FFMPEG Cheat Sheet
 
-# Table of Contents
+## Table of Contents
 
 - [Video](#video)
   - [Convert Video](#convert-video)
@@ -21,6 +21,16 @@
   ffmpeg -i input.mp4 -c:v <video codec> b:v <video bitrate> output.mkv
 ```
 _`-c:a` and `-b:a` for audio parameters_
+
+### Extract video
+```bash
+  ffmpeg -i input.mp4 -map 0:v -c copy output.mkv
+```
+
+### Extract audio
+```bash
+  ffmpeg -i input.mp4 -map 0:a -c copy output.m4a
+```
 
 ## Audio
 
