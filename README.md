@@ -1,4 +1,4 @@
-# FFMPEG Cheat Sheet
+# FFmpeg Cheat Sheet
 
 ## Table of Contents
 
