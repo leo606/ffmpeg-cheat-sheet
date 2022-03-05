@@ -22,12 +22,14 @@
 ```
 _`-c:a` and `-b:a` for audio parameters_
 
-### Extract video
+### Extract streams
+
+#### Extract video stream
 ```bash
   ffmpeg -i input.mp4 -map 0:v -c copy output.mkv
 ```
 
-### Extract audio
+#### Extract audio stream
 ```bash
   ffmpeg -i input.mp4 -map 0:a -c copy output.m4a
 ```
