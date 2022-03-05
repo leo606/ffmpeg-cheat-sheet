@@ -1,4 +1,4 @@
-# FFmpeg Cheat Sheet
+# <img width='20px' id=gh-light-mode-only src='https://github.com/simple-icons/simple-icons/raw/develop/icons/ffmpeg.svg'></img><img width='20px' id=gh-dark-mode-only src='https://ffmpeg.org/img/ffmpeg3d_white_20.png'></img> FFmpeg Cheat Sheet
 
 ## Table of Contents
 
@@ -14,12 +14,12 @@
 ### Convert Video
 
 #### ffmpeg default config for output
-```console
+```bash
   ffmpeg -i input.mp4 output.mkv
 ```
 
 #### Define codec and bit rate
-```console
+```bash
   ffmpeg -i input.mp4 -c:v <video codec> -b:v <video bitrate> output.mkv
 ```
 _`-c:a` and `-b:a` for audio parameters_
