@@ -1,4 +1,4 @@
-# <img width='20px' id=gh-light-mode-only src='https://github.com/simple-icons/simple-icons/raw/develop/icons/ffmpeg.svg'></img><img width='20px' id=gh-dark-mode-only src='https://ffmpeg.org/img/ffmpeg3d_white_20.png'></img> FFmpeg Cheat Sheet
+# <img width='20px' src='https://github.com/simple-icons/simple-icons/raw/develop/icons/ffmpeg.svg#gh-light-mode-only'></img><img width='20px' src='https://ffmpeg.org/img/ffmpeg3d_white_20.png#gh-dark-mode-only'></img> FFmpeg Cheat Sheet
 
 ## Table of Contents
 
