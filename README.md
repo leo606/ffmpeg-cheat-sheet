@@ -23,6 +23,11 @@
 ```
 _`-c:a` and `-b:a` for audio parameters_
 
+#### Change Video Container without re-encoding
+```bash
+  ffmpeg -i input.mp4 -c copy output.mkv
+```
+
 ### Extract Streams From a Video File
 
 #### Extract video stream
