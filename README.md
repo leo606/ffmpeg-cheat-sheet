@@ -63,14 +63,23 @@ _`-c:a` and `-b:a` for audio parameters_
 
 ### Concatenate Videos
 
-Create a file with all files to be concatenated with the following sintax:
+Create a file with all the files to be concatenated, all files must have the same streams (same codecs, same time base, resolution, etc.) but can be wrapped in different container formats, using the following sintax:
 
 ```bash
-  #comment
-  file 'path/to/file1.extension'
-  file 'path/to/file2.extension'
-  file 'path/to/file3.extension'
+  # files_list.txt
+  file '/path/to/file1.ext'
+  file '/path/to/file2.ext'
+  file '/path/to/file3.ext'
 ```
+
+The `-safe 0` above is not required if the paths are relative.
+
+#### Concatenate With Concat Demuxer
+
+```bash
+  ffmpeg -f concat -safe 0 -i files_list.txt -c copy output.wav
+```
+
 
 ## Audio
 
