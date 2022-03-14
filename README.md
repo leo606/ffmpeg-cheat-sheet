@@ -6,6 +6,7 @@
   - [Convert Video](#convert-video)
   - [Extract Streams From a Video File](#extract-streams-from-a-video-file)
   - [Crop Video](#crop-video)
+  - [Concatenate Videos](#concatenate-videos)
 - [**Audio**](#audio)
   - [Convert Audio](#convert-audio)
 
@@ -80,7 +81,7 @@ The `-safe 0` above is not required if the paths are relative.
   ffmpeg -f concat -safe 0 -i files_list.txt -c copy output.wav
 ```
 
-#### Generate Files List
+### Generate Files List
 
 With a bash for loop:
 
