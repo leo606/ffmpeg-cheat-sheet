@@ -80,6 +80,21 @@ The `-safe 0` above is not required if the paths are relative.
   ffmpeg -f concat -safe 0 -i files_list.txt -c copy output.wav
 ```
 
+#### Generate Files List
+
+With a bash for loop:
+
+```bash
+  # with a bash for loop:
+  for f in *.wav; do echo "file '$f'" >> mylist.txt; done
+```
+
+With printf:
+
+```bash
+  # or with printf:
+  printf "file '%s'\n" *.wav >> mylist.txt
+```
 
 ## Audio
 
