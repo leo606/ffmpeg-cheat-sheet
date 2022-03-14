@@ -64,6 +64,8 @@ _`-c:a` and `-b:a` for audio parameters_
 
 ### Concatenate Videos
 
+[FFmpeg trac page](https://trac.ffmpeg.org/wiki/Concatenate)
+
 Create a file with all the files to be concatenated, all files must have the same streams (same codecs, same time base, resolution, etc.) but can be wrapped in different container formats, using the following sintax:
 
 ```bash
@@ -86,14 +88,12 @@ The `-safe 0` above is not required if the paths are relative.
 With a bash for loop:
 
 ```bash
-  # with a bash for loop:
   for f in *.wav; do echo "file '$f'" >> mylist.txt; done
 ```
 
 With printf:
 
 ```bash
-  # or with printf:
   printf "file '%s'\n" *.wav >> mylist.txt
 ```
 
